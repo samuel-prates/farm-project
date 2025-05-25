@@ -70,10 +70,6 @@ docker-down:
 	make docker-backend-down
 	make docker-frontend-down
 
-docker-erase:
-	make docker-backend-erase
-	make docker-frontend-erase
-
 docker-restart:
 	make docker-backend-restart
 	make docker-frontend-restart
@@ -81,3 +77,15 @@ docker-restart:
 docker-erase:
 	make docker-backend-erase
 	make docker-frontend-erase
+
+test-backend:
+	cd backend && \
+		make jest
+
+test-frontend:
+	cd frontend && \
+		make jest
+
+test-project:
+	make test-backend
+	make test-frontend
