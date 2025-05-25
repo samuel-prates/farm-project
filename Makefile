@@ -2,6 +2,11 @@ submodule-init:
 	git submodule update --init --remote
 	git submodule foreach --recursive git checkout master
 
+submodule-update:
+	git submodule update --remote
+	git submodule foreach --recursive git checkout master
+	git submodule foreach --recursive git pull
+
 build-backend:
 	cd backend && \
 		make install && \
