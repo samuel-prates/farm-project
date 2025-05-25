@@ -2,3 +2,7 @@
 	path = backend
 	url = git@github.com:samuel-prates/farmer-manager-api.git
 	branch = master
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:samuel-prates/farmer-microfrontend.git
+	branch = master
