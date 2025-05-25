@@ -71,31 +71,7 @@ http://localhost:3000/api
 
 ```bash
 # unit tests
-npm run test
-
-# e2e tests
-npm run test:e2e
-
-# test coverage
-npm run test:cov
-```
-
-## Folder Structure
-
-```
-src/
-  app/
-    domain/
-      dto/
-      service/
-      validator/
-    exception/
-  entrypoint/
-    controllers/
-  infra/
-    database/
-      entities
-  main.ts
+make test-project
 ```
 
 ## Technologies
@@ -105,6 +81,12 @@ src/
 - [Swagger](https://swagger.io/)
 - [class-validator](https://github.com/typestack/class-validator)
 - [class-transformer](https://github.com/typestack/class-transformer)
+- [React](https://react.dev/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Styled Components](https://styled-components.com/)
+- [Vite](https://vitejs.dev/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 
 
